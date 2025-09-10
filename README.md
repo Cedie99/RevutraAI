@@ -1,6 +1,26 @@
-# 📚 SmartReviewer-AI
+# 📚 Revutra-AI
 
 SmartReviewer-AI is a web-based application that empowers users with instant access to understanding by intelligently processing and summarizing the content of uploaded documents (.pdf or .docx). Whether for exam preparation, document comprehension, or quick reviews, Revutra transforms complex materials into concise, easy-to-digest summaries.
+
+## Instructions 
+
+create a project folder 
+
+//open terminal and create Laravel on terminal
+composer create-project Laravel/Laravel:^9.0 revutraai-backend
+
+//run the laravel 
+cd revutraai-backend
+php artisan serve
+
+//open new terminal and create react app
+npx create-react-app revutraai-frontend
+
+//run the react
+cd revutraai-frontend
+npm install axios 
+npm install jspdf
+npm start
 
 ---
 
