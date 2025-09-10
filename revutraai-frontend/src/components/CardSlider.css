@@ -1,0 +1,126 @@
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 900px;
+  position: relative;
+}
+
+.slider-card {
+  background: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 10px;
+  /* Fixed size */
+  height: 450px;           /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #000000;
+  flex-shrink: 0;
+}
+
+/* Make just the content area scrollable */
+.slider-content {
+  flex: 1;                 /* Fill remaining space */
+  overflow-y: auto;
+  padding-right: 10px;     /* Space for scrollbar */
+  line-height: 1.7;
+  color: #444;
+}
+
+.slider-content ul {
+  margin: 12px 0;
+  padding-left: 24px;
+}
+
+.slider-content li {
+  margin-bottom: 8px;
+  list-style-type: disc;
+    color: #000000;
+}
+
+.slider-content h1,
+.slider-content h2,
+.slider-content h3 {
+  margin: 18px 0 10px;
+  color: #000000;
+  font-weight: 600;
+}
+
+.slider-content p {
+  margin: 10px 0;
+  color: #000000;
+}
+
+/* Custom scrollbar styling */
+.slider-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.slider-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.3s, transform 0.3s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+}
+
+.nav-btn:hover {
+  color: #333;
+  transform: translateY(-50%) scale(1.15);
+}
+
+.nav-btn.left {
+  left: -40px;
+}
+
+.nav-btn.right {
+  right: -40px;
+}
+
+
+.page-indicator {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #000000;
+  text-align: right;
+  font-style: italic;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
