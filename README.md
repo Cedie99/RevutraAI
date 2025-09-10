@@ -4,23 +4,34 @@ SmartReviewer-AI is a web-based application that empowers users with instant acc
 
 ## Instructions 
 
-create a project folder 
+1️⃣ Clone the repository.
 
-//open terminal and create Laravel on terminal.
-- composer create-project Laravel/Laravel:^9.0 revutraai-backend
+- git clone https://github.com/Cedie99/Revutra-AI.git
+- cd Revutra-AI
+  
+2️⃣ Setup the Frontend.
 
-//run the laravel.
+- cd revutraai-frontend
+- npm install
+- npm start
+
+3️⃣ Setup the Backend.
+
 - cd revutraai-backend
 - php artisan serve
 
-//open new terminal and create react app.
-- npx create-react-app revutraai-frontend
+4️⃣ Environment Variables.
 
-//run the react.
-- cd revutraai-frontend
-- npm install axios 
-- npm install jspdf
-- npm start
+Create a .env file inside backend (and frontend if needed).
+
+- AZURE_OPENAI_ENDPOINT=https://xxxxxxxx
+- AZURE_OPENAI_API_KEY=xxxxx
+- AZURE_OPENAI_DEPLOYMENT_NAME=gpt-4.1
+- AZURE_OPENAI_API_VERSION=2025-01-01-preview
+
+- APP_ENV=production
+- APP_DEBUG=false
+- APP_URL=https://xxxxxxxx
 
 ---
 
