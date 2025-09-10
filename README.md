@@ -6,21 +6,21 @@ SmartReviewer-AI is a web-based application that empowers users with instant acc
 
 create a project folder 
 
-//open terminal and create Laravel on terminal
-composer create-project Laravel/Laravel:^9.0 revutraai-backend
+//open terminal and create Laravel on terminal.
+- composer create-project Laravel/Laravel:^9.0 revutraai-backend
 
-//run the laravel 
-cd revutraai-backend
-php artisan serve
+//run the laravel.
+- cd revutraai-backend
+- php artisan serve
 
-//open new terminal and create react app
-npx create-react-app revutraai-frontend
+//open new terminal and create react app.
+- npx create-react-app revutraai-frontend
 
-//run the react
-cd revutraai-frontend
-npm install axios 
-npm install jspdf
-npm start
+//run the react.
+- cd revutraai-frontend
+- npm install axios 
+- npm install jspdf
+- npm start
 
 ---
 
